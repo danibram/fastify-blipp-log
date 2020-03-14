@@ -1,22 +1,13 @@
 import * as fp from 'fastify-plugin'
-import { IncomingMessage, Server, ServerResponse } from 'http'
 
-type Iopts = {
-    customLogger?: any
-    tabLength?: any
-}
-
-declare module 'fastify' {
-    export interface FastifyInstance<
-        HttpServer = Server,
-        HttpRequest = IncomingMessage,
-        HttpResponse = ServerResponse
-    > {
-        prettyPrintRoutes(): void
-    }
-}
-
-export default fp(function(fastify, opts: Iopts, next) {
+export default fp(function(
+    fastify,
+    opts: {
+        customLogger?: any
+        tabLength?: any
+    },
+    next
+) {
     const routes: any = []
     const logger = opts.customLogger ? opts.customLogger : fastify.log
 

@@ -1,6 +1,6 @@
 {
     "name": "fastify-blipp-log",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "A fastify-blipp that you can pass the logger for better log coherence",
     "main": "build/main/index.js",
     "typings": "build/main/index.d.ts",

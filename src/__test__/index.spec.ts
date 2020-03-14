@@ -1,7 +1,7 @@
 import test from 'ava'
 import * as fastify from 'fastify'
 import * as pino from 'pino'
-import prettyRoutes from '.'
+import prettyRoutes from '..'
 
 const opts: any = {
     prettyPrint: { colorize: true }
