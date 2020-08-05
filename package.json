@@ -34,7 +34,7 @@
     },
     "homepage": "https://github.com/danibram/fastify-blipp-log#readme",
     "devDependencies": {
-        "fastify": "^1.14.1",
+        "fastify": "^2.15.1",
         "prettier": "^1.19.1",
         "typescript": "^3.8.3",
         "pino": "^5.17.0",
